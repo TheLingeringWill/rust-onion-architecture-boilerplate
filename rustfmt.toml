@@ -1,0 +1,209 @@
+# Configuring Rustfmt
+
+# Indent on expressions or items.
+indent_style = "Block"
+
+# Reorder import and extern crate statements alphabetically in groups (a group is separated by a newline).
+reorder_imports = false
+
+# Maximum width of arrays.
+array_width = 60
+
+# Maximum width of attributes on function-like items.
+attr_fn_like_width = 70
+
+# Where to put a binary operator when a binary expression goes multiline.
+binop_separator = "Front"
+
+# Minimum number of blank lines which must be put between items.
+blank_lines_lower_bound = 0
+
+# Maximum number of blank lines which can be put between items.
+blank_lines_upper_bound = 1
+
+# Brace style for items.
+brace_style = "SameLineWhere"
+
+# Maximum width of method chains.
+chain_width = 60
+
+# Whether to use colored output or not.
+color = "Auto"
+
+# Combine control expressions with function calls.
+combine_control_expr = true
+
+# Maximum length of comments. No effect unless wrap_comments = true.
+comment_width = 80
+
+# Replace strings of _ wildcards by a single .. in tuple patterns.
+condense_wildcard_suffixes = false
+
+# Brace style for control flow constructs.
+control_brace_style = "AlwaysSameLine"
+
+# Don't reformat anything.
+disable_all_formatting = false
+
+# Specifies which edition is used by the parser.
+edition = "2015"
+
+# Put empty-body functions and impls on a single line.
+empty_item_single_line = true
+
+# The maximum length of enum variant having discriminant, that gets vertically aligned with others.
+enum_discrim_align_threshold = 0
+
+# Error if Rustfmt is unable to get all lines within max_width, except for comments and string literals.
+error_on_line_overflow = false
+
+# Error if unable to get comments or string literals within max_width, or they are left with trailing whitespaces.
+error_on_unformatted = false
+
+# Maximum width of function calls.
+fn_call_width = 60
+
+# Control the layout of function parameters.
+fn_params_layout = "Compressed"
+
+# Put single-expression functions on a single line.
+fn_single_line = false
+
+# Always print the abi for extern items.
+force_explicit_abi = true
+
+# Force multiline closure and match arm bodies to be wrapped in a block.
+force_multiline_blocks = false
+
+# Format code snippet included in doc comments.
+format_code_in_doc_comments = false
+
+# Maximum width of code blocks in doc comments.
+doc_comment_code_block_width = 100
+
+# Format generated files.
+format_generated_files = true
+
+# Maximum number of lines to search for the generated marker.
+generated_marker_line_search_limit = 5
+
+# Format the metavariable matching patterns in macros.
+format_macro_matchers = false
+
+# Format the bodies of macros.
+format_macro_bodies = true
+
+# Skip formatting specific macro invocations.
+skip_macro_invocations = []
+
+# Format string literals where necessary.
+format_strings = true
+
+# Use tab characters for indentation, spaces for alignment.
+hard_tabs = false
+
+# Case style for hexadecimal literals.
+hex_literal_case = "Preserve"
+
+# Skip formatting files and directories that match the specified pattern.
+ignore = []
+
+# Indent style of imports.
+imports_indent = "Block"
+
+# Item layout inside an imports block.
+imports_layout = "Mixed"
+
+
+# Write an item and its attribute on the same line if their combined width is below a threshold.
+inline_attribute_width = 0
+
+# Wrap the body of arms in blocks when it does not fit on the same line with the pattern of arms.
+match_arm_blocks = true
+
+# Controls whether to include a leading pipe on match arms.
+match_arm_leading_pipes = "Never"
+
+# Put a trailing comma after a block based match arm (non-block arms are not affected).
+match_block_trailing_comma = false
+
+# Maximum width of each line.
+max_width = 80
+
+# Merge multiple derives into a single one.
+merge_derives = true
+
+# Controls the strategy for how imports are grouped together.
+imports_granularity = "Preserve"
+
+# Unix or Windows line endings.
+newline_style = "Auto"
+
+# Convert /* */ comments to // comments where possible.
+normalize_comments = false
+
+# Convert #![doc] and #[doc] attributes to //! and /// doc comments.
+normalize_doc_attributes = false
+
+# When structs, slices, arrays, and block/array-like macros are used as the last argument in an expression list, allow them to overflow (like blocks/closures) instead of being indented on a new line.
+overflow_delimited_expr = false
+
+# Remove nested parens.
+remove_nested_parens = true
+
+# Reorder impl items. type and const are put first, then macros and methods.
+reorder_impl_items = false
+
+# Controls the strategy for how imports are grouped together.
+group_imports = "Preserve"
+
+# Reorder mod declarations alphabetically in group.
+reorder_modules = true
+
+# Don't reformat out of line modules.
+skip_children = false
+
+# Leave a space after the colon.
+space_after_colon = true
+
+# Leave a space before the colon.
+space_before_colon = false
+
+# Put spaces around the .., ..=, and ... range operators.
+spaces_around_ranges = false
+
+# The maximum diff of width between struct fields to be aligned with each other.
+struct_field_align_threshold = 0
+
+# Put small struct literals on a single line.
+struct_lit_single_line = true
+
+# Maximum width of struct literals.
+struct_lit_width = 60
+
+# Number of spaces per tab.
+tab_spaces = 2
+
+# How to handle trailing commas for lists.
+trailing_comma = "Vertical"
+
+# Add trailing semicolon after break, continue and return.
+trailing_semicolon = true
+
+# Determines if + or = are wrapped in spaces in the punctuation of types.
+type_punctuation_density = "Wide"
+
+# Enable unstable features on the unstable channel.
+unstable_features = false
+
+# Use field initialize shorthand if possible.
+use_field_init_shorthand = false
+
+# Whether to use different formatting for items and expressions if they satisfy a heuristic notion of 'small'.
+use_small_heuristics = "Default"
+
+# Replace uses of the try! macro by the ? shorthand.
+use_try_shorthand = false
+
+# Which version of the formatting rules to use. Version::One is backwards-compatible with Rustfmt 1.0. Other versions are only backwards compatible within a major version number.
+version = "One"
